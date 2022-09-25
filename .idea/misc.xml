@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/card_back_btn.xml" value="0.208" />
+        <entry key="app/src/main/res/drawable/card_recipe.xml" value="0.208" />
+        <entry key="app/src/main/res/drawable/card_shape.xml" value="0.208" />
+        <entry key="app/src/main/res/drawable/image_btm_overlay.xml" value="0.152" />
+        <entry key="app/src/main/res/drawable/searchview.xml" value="0.208" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2707568403603374" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17980072463768115" />
+        <entry key="app/src/main/res/layout/activity_recipe.xml" value="0.2487566637249911" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.2638415571572124" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2186236616493999" />
+        <entry key="app/src/main/res/layout/bottom_sheet.xml" value="0.2422061201454937" />
+        <entry key="app/src/main/res/layout/popular_list.xml" value="0.5257654977675101" />
+        <entry key="app/src/main/res/layout/search_list.xml" value="0.3471774336220562" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

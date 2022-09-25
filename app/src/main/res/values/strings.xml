@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VegTummy</string>
+    <string name="privacy_policy_url">https://makesdigi.com/recipeApp/privacy.html</string>
+    <string name="abt_dev">https://makesdigi.com/</string>
+</resources>

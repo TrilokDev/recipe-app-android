@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/card_back_btn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/menu_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:visibility="gone"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="-10dp"
+        android:src="@drawable/home_assest1"
+        android:rotation="-1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_semi"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/poppins_semi"
+        android:text="foodie!"
+        android:textColor="@color/purple_500"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Which indian food would you like to cook?"
+        android:textColor="#424242"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:focusable="false"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/searchview"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Search recipe"
+        android:paddingStart="47dp"
+        android:textColorHint="#5A5858"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:autofillHints=""
+        tools:ignore="RtlSymmetry" />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="22dp"
+        android:padding="5dp"
+        android:src="@drawable/search_ic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/poppins_semi"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/salad"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/category_card_bc"
+                android:padding="4dp"
+                android:src="@drawable/category_salad" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salad"
+                android:layout_alignStart="@+id/salad"
+                android:layout_alignEnd="@+id/salad"
+                android:layout_alignBottom="@id/salad"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="-23dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Salad"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/MainDish"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/salad"
+                android:background="@drawable/category_card_bc"
+                android:padding="4dp"
+                android:src="@drawable/category_main" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salad"
+                android:layout_alignStart="@+id/MainDish"
+                android:layout_alignEnd="@+id/MainDish"
+                android:layout_alignBottom="@id/salad"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="-25dp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Main"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+            <ImageView
+                android:id="@+id/Drinks"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/MainDish"
+                android:background="@drawable/category_card_bc"
+                android:padding="4dp"
+                android:src="@drawable/catergory_drinks" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Drinks"
+                android:layout_alignStart="@+id/Drinks"
+                android:layout_alignEnd="@+id/Drinks"
+                android:layout_alignBottom="@id/salad"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginBottom="-25dp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Drinks"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+            <ImageView
+                android:id="@+id/Desserts"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/Drinks"
+                android:background="@drawable/category_card_bc"
+                android:padding="4dp"
+                android:src="@drawable/category_dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Desserts"
+                android:layout_alignStart="@+id/Desserts"
+                android:layout_alignEnd="@+id/Desserts"
+                android:layout_alignBottom="@id/Desserts"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginBottom="-25dp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Dessert"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/popular_text"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semi"
+        android:text="Popular recipe"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/loading_anim"
+        app:layout_constraintTop_toBottomOf="@+id/popular_text" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcview_popular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popular_text"
+        tools:ignore="RtlSymmetry" />
+</androidx.constraintlayout.widget.ConstraintLayout>
