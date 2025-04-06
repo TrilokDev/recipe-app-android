@@ -1,7 +1,4 @@
 # Recipe app with modern UI design
-<img src="https://makesdigi.com/recipeApp/recipe-bn.jpg" width="500">
-
-
 
 https://user-images.githubusercontent.com/114339615/192168742-8bc598f2-dfce-482c-a4c3-98d13d19db27.mp4
 
